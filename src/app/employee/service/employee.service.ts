@@ -1,7 +1,9 @@
 import {Injectable} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
-import {AgeFilter, Employee, SortOrder} from '../model/employee';
 import {Observable} from 'rxjs';
+import {AgeFilter} from '../model/age-filter';
+import {Employee} from '../model/employee';
+import {SortOrder} from '../model/sort-order';
 
 @Injectable({
   providedIn: 'root'

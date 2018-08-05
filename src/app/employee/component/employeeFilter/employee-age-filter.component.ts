@@ -1,6 +1,6 @@
 import {Component, Inject} from '@angular/core';
 import {MAT_DIALOG_DATA, MatDialogRef} from '@angular/material';
-import {AgeFilter} from '../../model/employee';
+import {AgeFilter} from '../../model/age-filter';
 import {AgeFilterData} from '../../model/age-filter-data';
 
 @Component({

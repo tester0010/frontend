@@ -1,6 +1,6 @@
 import {Component, Inject} from '@angular/core';
 import {MAT_DIALOG_DATA, MatDialogRef} from '@angular/material';
-import {SortOrder} from '../../model/employee';
+import {SortOrder} from '../../model/sort-order';
 
 @Component({
   selector: 'app-employee-salary-filter',
