@@ -1,11 +1,14 @@
 table {
   width: 100%;
-  margin-top: 20px;
+}
+
+#filters {
+  margin: 25px 0;
 }
 
 th {
-  background-color: #828282;
-  color: white;
+  background-color: gainsboro;
+  color: black;
 }
 
 #employeeComponent {
@@ -13,10 +16,6 @@ th {
   min-width: 350px;
   max-width: 1000px;
   margin: 0 auto;
-}
-
-th.mat-sort-header-sorted {
-  color: black;
 }
 
 #filters > button {
