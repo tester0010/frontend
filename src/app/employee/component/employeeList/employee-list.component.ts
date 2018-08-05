@@ -1,19 +1,21 @@
 import {ChangeDetectionStrategy, Component, OnInit, ViewChild} from '@angular/core';
 import {EmployeeService} from '../../service/employee.service';
-import {AgeFilter, Employee, SortOrder} from '../../model/employee';
+import {Employee} from '../../model/employee';
 import {MatDialog, MatPaginator, MatSort, MatTableDataSource} from '@angular/material';
 import {EmployeeAgeFilterComponent} from '../employeeFilter/employee-age-filter.component';
 import {AgeFilterData} from '../../model/age-filter-data';
 import {EmployeeSalaryFilterComponent} from '../employeeFilter/employee-salary-filter.component';
 import {filter} from 'rxjs/operators';
+import {AgeFilter} from '../../model/age-filter';
+import {SortOrder} from '../../model/sort-order';
 
 @Component({
   selector: 'app-employee',
-  templateUrl: './employee.component.html',
-  styleUrls: ['./employee.component.css'],
+  templateUrl: './employee-list.component.html',
+  styleUrls: ['./employee-list.component.css'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class EmployeeComponent implements OnInit {
+export class EmployeeListComponent implements OnInit {
 
   dataSource: MatTableDataSource<Employee>;
   displayedColumns: string[] = ['name', 'salary', 'age', 'email', 'phone'];
