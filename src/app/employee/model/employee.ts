@@ -1,3 +1,5 @@
+import {Address} from './address';
+
 export class Employee {
   id: number;
   name: string;
@@ -10,19 +12,6 @@ export class Employee {
   address?: Address;
 }
 
-export class Address {
-  street: string;
-  city: string;
-  zipcode: string;
-}
 
-export enum SortOrder {
-  ASC = 'ASCENDING',
-  DESC = 'DESCENDING'
-}
 
-export enum AgeFilter {
-  BELOW = 'BELOW',
-  ABOVE = 'ABOVE',
-  EQUAL = 'EQUAL'
-}
+

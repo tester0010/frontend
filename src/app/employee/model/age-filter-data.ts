@@ -1,4 +1,4 @@
-import {AgeFilter} from './employee';
+import {AgeFilter} from './age-filter';
 
 export class AgeFilterData {
   age: number;
